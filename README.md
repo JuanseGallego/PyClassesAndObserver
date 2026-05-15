@@ -32,7 +32,7 @@ git status
 Después de clonar el repositorio, se utilizan los siguientes comandos para crear y activar el entorno virtual:
 
 ```bash
-py -m venv .venv
+python3 -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 ```
