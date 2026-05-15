@@ -24,8 +24,8 @@ El workflow **Iniciar práctica** también puede ejecutarse con el primer `push`
 Primero clona tu copia del repositorio y entra a la carpeta del proyecto:
 
 ```bash
-git clone https://github.com/TU_USUARIO/NOMBRE_DEL_REPOSITORIO.git
-cd NOMBRE_DEL_REPOSITORIO
+git clone https://github.com/JuanseGallego/PyClassesAndObserver.git
+cd PyClassesAndObserver
 git status
 ```
 
