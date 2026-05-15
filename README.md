@@ -29,7 +29,14 @@ cd PyClassesAndObserver
 git status
 ```
 
-Después de clonar el repositorio, completa esta sección durante la primera misión con los comandos para crear, activar y preparar el entorno virtual.
+Después de clonar el repositorio, se utilizan los siguientes comandos para crear y activar el entorno virtual:
+
+```bash
+py -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+```
+
 
 ## Estructura esperada
 
