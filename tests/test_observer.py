@@ -66,3 +66,4 @@ def test_canales_son_independientes():
     assert python.ultimo_mensaje == "Patrones de diseno"
     assert datos.ultimo_mensaje == "Analisis de datos"
 
+""
