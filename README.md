@@ -80,14 +80,20 @@ Observa tres ideas:
 
 Más adelante crearás también `SuscriptorSMS` y `CanalNoticias`.
 
+## Clases principales (explicadas en palabras simples)
+
+- `SuscriptorEmail`: guarda un nombre, el canal "email" y una lista de mensajes recibidos. Su método `actualizar(mensaje)` agrega un nuevo mensaje a la lista.
+- `SuscriptorSMS`: igual que `SuscriptorEmail`, pero su canal es "sms". También recibe mensajes con `actualizar`.
+- `CanalNoticias`: representa el canal que publica mensajes. Administra la lista de observadores (suscriptores) y se encarga de avisarles cuando hay novedades.
+
 ## Implementar Observer paso a paso
 
 El patrón Observer separa un objeto que cambia, llamado sujeto observable, de los objetos que reaccionan al cambio, llamados observadores.
 
 En este proyecto:
 
-- `CanalNoticias` es el sujeto observable.
-- `SuscriptorEmail` y `SuscriptorSMS` son observadores.
+- El sujeto observable es `CanalNoticias` (publica mensajes y notifica).
+- Los observadores son `SuscriptorEmail` y `SuscriptorSMS` (reciben actualizaciones).
 - `suscribir` agrega observadores.
 - `desuscribir` elimina observadores.
 - `notificar` llama `actualizar(mensaje)` en cada observador.
@@ -169,4 +175,4 @@ Al terminar las misiones, se creará un issue final de calificación. Ejecuta ma
 
 ## Autores
 
-- Reemplaza esta línea con tu nombre, grupo, curso o rol.
+- Juan Sebastian Gallego Villamil
